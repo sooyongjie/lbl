@@ -1,0 +1,175 @@
+.rating {
+  display: flex;
+}
+.skills {
+  width: calc(100% - 28px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+  opacity: 0;
+  .programming-skills,
+  .soft-skills {
+    width: 100%;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 28px;
+    opacity: 0;
+    transition: 0.2s ease-out;
+    .skill {
+      width: 100%;
+      display: grid;
+      align-items: center;
+      grid-template-columns: max-content 1fr;
+      column-gap: 12px;
+      i {
+        width: 28px;
+        height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        align-items: center;
+        font-size: 13px;
+      }
+      img {
+        width: 28px;
+        height: 28px;
+        pointer-events: none;
+      }
+      .skill-info {
+        margin-top: -3px;
+        display: grid;
+        grid-template-rows: max-content, 1fr;
+        row-gap: 8px;
+        .skill-details {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          span.skill-name {
+            color: #444;
+            font-family: "Roboto Mono", monospace;
+            font-size: 14px;
+            font-weight: 600;
+          }
+          span.skill-rating {
+            font-family: "Roboto Mono", monospace;
+            font-size: 13px;
+            color: #222;
+          }
+        }
+        .bars {
+          height: 6px;
+          hr {
+            border-radius: 4px;
+          }
+          hr.background {
+            border: none;
+            border-top: 5px solid;
+          }
+          hr.accent {
+            width: 0%;
+            margin-top: -5px;
+            z-index: 99;
+            border: none;
+            border-top: 5px solid;
+            transition: 1s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+.soft-skills {
+  .fa-heart {
+    color: #e53935;
+    background: #fbe9e7;
+  }
+  .fa-search {
+    color: #2196f3;
+    background: #e3f2fd;
+  }
+  .fa-lightbulb-on {
+    color: #f9a825;
+    background: #fff9c4;
+  }
+  .fa-bullseye-arrow {
+    color: #689f38;
+    background: #f1f8e9;
+  }
+  .passion {
+    hr.accent {
+      border-color: #e53935 !important;
+    }
+    hr.background {
+      border-color: #fbe9e7 !important;
+    }
+  }
+  .focus {
+    hr.accent {
+      border-color: #2196f3 !important;
+    }
+    hr.background {
+      border-color: #e3f2fd !important;
+    }
+  }
+  .creativity {
+    hr.accent {
+      border-color: #fbc02d !important;
+    }
+    hr.background {
+      border-color: #fff9c4 !important;
+    }
+  }
+  .accuracy {
+    hr.accent {
+      border-color: #689f38 !important;
+    }
+    hr.background {
+      border-color: #f1f8e9 !important;
+    }
+  }
+}
+
+.programming-skills {
+  .css {
+    hr.accent {
+      border-color: #2e4ecc !important;
+    }
+    hr.background {
+      border-color: #e8eaf9 !important;
+    }
+  }
+  .github {
+    img {
+      height: 26px !important;
+    }
+    hr.accent {
+      border-color: #444444 !important;
+    }
+    hr.background {
+      border-color: #eaeaea !important;
+    }
+  }
+  .react {
+    hr.accent {
+      border-color: #62dafc !important;
+    }
+    hr.background {
+      border-color: #ddf7fe !important;
+    }
+  }
+  .javascript {
+    img {
+      height: 26px !important;
+    }
+    hr.accent {
+      border-color: #f5cb18 !important;
+    }
+    hr.background {
+      border-color: #fdf5be !important;
+    }
+  }
+}

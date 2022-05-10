@@ -1,0 +1,132 @@
+$orange: #fca311;
+$lightorange: #fff3e0;
+$darkblue: #14213d;
+$grey: #e5e5e5;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Mono&display=swap");
+@import "nav";
+@import "content";
+@import "skills";
+@import "keyframe";
+@import "mobile";
+@import "theme";
+
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background: #e2920f;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: white;
+  transition: 0.2s ease-in-out;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: rgba(252, 163, 17, 0.8);
+}
+
+h1,
+h2,
+p,
+span {
+  color: $darkblue;
+  cursor: default;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+a {
+  color: $darkblue;
+  text-decoration: none;
+  span {
+    cursor: pointer;
+  }
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+button,
+button span,
+button i {
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button.skip-btn {
+  padding: 8px 16px 9px 16px;
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  column-gap: 8px;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  z-index: 99;
+  background: $darkblue;
+  transition: 0.15s ease-out;
+  opacity: 0;
+  i {
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 1px;
+  }
+  i,
+  span {
+    color: #eee;
+  }
+  span {
+    font-family: "Roboto Mono", monospace;
+    font-size: 13px;
+  }
+  &.show {
+    bottom: 0px !important;
+    opacity: 1 !important;
+  }
+}
+
+footer {
+  height: 70px;
+  border-top: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    color: $darkblue;
+    font-size: 14px;
+    font-family: "Roboto Mono", monospace;
+  }
+}

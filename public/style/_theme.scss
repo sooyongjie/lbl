@@ -1,0 +1,188 @@
+$dt-white: #e4e0d8;
+$lighterblue: #2b3750;
+$lighterorange: #e2920f;
+
+.dark-theme {
+  &:-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: rgba(226, 146, 15, 0.9);
+  }
+  color: $dt-white;
+  background: $darkblue;
+  nav {
+    .nav-icons a i {
+      color: #e4e0d8;
+    }
+    hr {
+      border-color: #cdc9c2;
+    }
+  }
+  p {
+    color: $dt-white;
+  }
+  p.intro-text,
+  p.para {
+    color: $dt-white;
+  }
+  li,
+  span.skill-name {
+    color: $dt-white !important;
+  }
+  .heading hr {
+    border-color: #434d63 !important;
+  }
+  .project-links a {
+    i,
+    svg {
+      color: #b1aba1 !important;
+    }
+  }
+  .project-description {
+    background: $lighterblue !important;
+  }
+  .project-timeline p.year {
+    background: $lighterblue;
+    color: $orange;
+  }
+  .image {
+    &:hover img {
+      opacity: 0.85;
+    }
+    img {
+      border-color: $lighterblue;
+      opacity: 0.9;
+      filter: grayscale(20%);
+    }
+  }
+  a.tag {
+    color: #b1aba1 !important;
+    // color: #98938a !important;
+    border-color: $darkblue !important;
+    &:hover {
+      border-color: #b1aba1 !important;
+    }
+  }
+  label {
+    color: #e4dccf;
+  }
+  input,
+  textarea {
+    color: $dt-white;
+    background: $lighterblue !important;
+    border-color: $darkblue;
+  }
+  button.form-btn {
+    background: $lighterblue !important;
+    border-color: #2b3750;
+    &:hover, &:focus {
+      border-color: $lighterorange;
+    }
+  }
+
+  p.i-am,
+  .intro a,
+  .intro span,
+  p.project-type {
+    color: #e2920f !important;
+  }
+
+  button.skip-btn {
+    background: $lighterblue;
+    border: 1px solid $darkblue;
+  }
+  footer {
+    border-top: 1px solid #434d63 !important;
+  }
+}
+
+.dark-theme {
+  .fa-lightbulb-on {
+    color: #fbc642;
+    background: #7d6016;
+  }
+  .fa-heart {
+    color: #e74c49;
+    background: #721c1a;
+  }
+  .fa-search {
+    color: #4dabf5;
+    background: #104b79;
+  }
+  .fa-bullseye-arrow {
+    color: #77a84b;
+    background: #344f1c;
+  }
+  .creativity {
+    hr.accent {
+      border-color: #fbc642 !important;
+    }
+    hr.background {
+      border-color: #7d6016 !important;
+    }
+  }
+  .passion {
+    hr.accent {
+      border-color: #e74c49 !important;
+    }
+    hr.background {
+      border-color: #721c1a !important;
+    }
+  }
+  .focus {
+    hr.accent {
+      border-color: #4dabf5 !important;
+    }
+    hr.background {
+      border-color: #104b79 !important;
+    }
+  }
+  .accuracy {
+    hr.accent {
+      border-color: #77a84b !important;
+    }
+    hr.background {
+      border-color: #344f1c !important;
+    }
+  }
+  .programming-skills {
+    .css {
+      hr.accent {
+        border-color: #425fd1 !important;
+      }
+      hr.background {
+        border-color: #1b2e7a !important;
+      }
+    }
+    .github {
+      img {
+        height: 26px !important;
+        filter: invert(100%);
+      }
+      hr.accent {
+        border-color: #ccc !important;
+      }
+      hr.background {
+        border-color: #555 !important;
+      }
+    }
+    .react {
+      hr.accent {
+        border-color: #71ddfc !important;
+      }
+      hr.background {
+        border-color: #275764 !important;
+      }
+    }
+    .javascript {
+      img {
+        height: 26px !important;
+      }
+      hr.accent {
+        border-color: #f6d02f !important;
+      }
+      hr.background {
+        border-color: #7a650c !important;
+      }
+    }
+  }
+}

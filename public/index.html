@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soo Yong Jie</title>
+  <link rel="shortcut icon" href="./img/smile-holo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+  <!-- Social Meta Tags -->
+  <!-- <link rel="icon" href="/favicon-32x32.png?v=dedd91ab2778735e31d0a7ccbb422fb7" type="image/png"> -->
+  <meta name="description" content="wow, ok">
+  <meta name="image" content="https://sooyongjie.web.app/img/sooyongjie.png">
+  <meta property="og:title" content="My Portfolio">
+  <meta property="og:description" content="wow, ok">
+  <meta property="og:image" content="https://sooyongjie.web.app/img/sooyongjie.png">
+  <meta property="og:url" content="https://sooyongjie.web.app/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@sooyongjie">
+  <meta name="twitter:title" content="My Portfolio">
+  <meta name="twitter:description" content="wow, ok">
+  <meta name="twitter:image" content="https://sooyongjie.web.app/img/sooyongjie.png">
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <!-- New -->
+  <meta name="color-scheme" content="dark light">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <img src="./img/smile.svg" alt="">
+      <div class="nav-icons">
+        <button class="theme-btn">
+          <img class="theme-icon" src="./img/sun.svg" alt="">
+        </button>
+        <hr>
+        <a href="https://instagram.com/sooyongjie/">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/sooyongjie/">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/soo-yong-jie-14a82a196">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <script src="./theme.js"></script>
+  <button class="skip-btn">
+    <i class="fas fa-long-arrow-alt-down"></i>
+    <span>Skip Projects</span>
+  </button>
+  <div class="container">
+    <div class="section intro">
+      <p class="i-am">Hello, my name is</p>
+      <p class="name">Soo Yong Jie.</p>
+      <p class="intro-text">
+        A fresh graduate looking for oppurtunities in Frontend Web Development.
+      </p>
+      <div class="buttons">
+        <a href="https://firebasestorage.googleapis.com/v0/b/sooyongjie.appspot.com/o/Resume.pdf?alt=media&token=78f966f1-d45a-4e62-b9b6-90926429e277"
+          class="resume-btn">
+          <i class="far fa-file-pdf"></i>
+          <span>Resume</span>
+        </a>
+        <button class="about-me-btn">
+          <span>About me</span>
+          <i class="far fa-hand-point-down"></i>
+        </button>
+      </div>
+    </div>
+    <!-- About Me -->
+    <section class="section about-me" id="about">
+      <div class="heading">
+        <p class="title">
+          <span>01.</span>
+          About me
+        </p>
+        <hr>
+      </div>
+      <p class="para">
+        I'm Yong Jie and I am passionate about Web Development. It all started in 2018 when I was having an internship
+        where I had to implement some features. After following some tutorials online I ended up messing with the CSS
+        more than the backend.
+      </p>
+      <br>
+      <p class="para">
+        That was my first time being exposed to CSS, and it is where I realised my passion for design. Since then I
+        started going to YouTube to learn the endless posibilities of Web Development and I couldn't stop.
+      </p>
+      <br>
+      <p class="para">
+        Here are a few technologies I've learnt in the recent years:
+      </p>
+      <ul>
+        <li>PHP</li>
+        <li>CSS/SASS</li>
+        <li>JavaScript (ES6)</li>
+        <li>React</li>
+      </ul>
+    </section>
+    <!-- Rating -->
+    <div class="section ratings">
+      <div class="heading">
+        <p class="title">
+          <span>02.</span>
+          Skills
+        </p>
+        <hr>
+      </div>
+      <div class="skills">
+        <div class="soft-skills">
+          <div class="skill creativity">
+            <i class="far fa-lightbulb-on"></i>
+            <div class="skill-info">
+              <div class="skill-details">
+                <span class="skill-name">Creativity</span>
+                <span class="skill-rating">8.5</span>
+              </div>
+              <div class="bars">
+                <hr class="background">
+                <hr class="accent focus">
+              </div>
+            </div>
+          </div>
+          <div class="skill passion">
+            <i class="fas fa-heart"></i>
+            <div class="skill-info">
+              <div class="skill-details">
+                <span class="skill-name">Passion</span>
+                <span class="skill-rating">9.5</span>
+              </div>
+              <div class="bars">
+                <hr class="background">
+                <hr class="accent passion">
+              </div>
+            </div>
+          </div>
+          <div class="skill focus">
+            <i class="far fa-search"></i>
+            <div class="skill-info">
+              <div class="skill-details">
+                <span class="skill-name">Focus</span>
+                <span class="skill-rating">7.5</span>
+              </div>
+              <div class="bars">
+                <hr class="background">
+                <hr class="accent focus">
+              </div>
+            </div>
+          </div>
+          <div class="skill accuracy">
+            <i class="far fa-bullseye-arrow"></i>
+            <div class="skill-info">
+              <div class="skill-details">
+                <span class="skill-name">Attention to detail</span>
+                <span class="skill-rating">9.6</span>
+              </div>
+              <div class="bars">
+                <hr class="background">
+                <hr class="accent focus">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="programming-skills">
+          <div class="skill css">
+            <img src="./img/css.svg" alt="">
+            <div class="skill-info">
+              <div class="skill-details">
+                <span class="skill-name">CSS/SASS</span>
+                <span class="skill-rating">9.0</span>
+              </div>
+              <div class="bars">
+                <hr class="background">
+                <hr class="accent focus">
+              </div>
+            </div>
+          </div>
+          <div class="skill github">
+            <img src="./img/github.svg" alt="">
+            <div class="skill-info">
+              <div class="skill-details">
+                <span class="skill-name">GitHub</span>
+                <span class="skill-rating">7.5</span>
+              </div>
+              <div class="bars">
+                <hr class="background">
+                <hr class="accent focus">
+              </div>
+            </div>
+          </div>
+          <div class="skill react">
+            <img src="./img/react.svg" alt="">
+            <div class="skill-info">
+              <div class="skill-details">
+                <span class="skill-name">React</span>
+                <span class="skill-rating">2.0</span>
+              </div>
+              <div class="bars">
+                <hr class="background">
+                <hr class="accent focus">
+              </div>
+            </div>
+          </div>
+          <div class="skill javascript">
+            <img src="./img/javascript.svg" alt="">
+            <div class="skill-info">
+              <div class="skill-details">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-rating">8.5</span>
+              </div>
+              <div class="bars">
+                <hr class="background">
+                <hr class="accent focus">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Projects -->
+    <div class="section projects">
+      <div class="heading">
+        <p class="title">
+          <span id="about">03.</span>
+          Projects
+        </p>
+        <hr>
+      </div>
+      <!--
+        INTI
+      -->
+      <div class="project inti">
+        <div class="project-timeline">
+          <p class="year">2021</p>
+        </div>
+        <div class="project-info">
+          <p class="project-type">Academic Project</p>
+        </div>
+        <div class="project-heading">
+          <p class="project-title">INTI Academic Services</p>
+          <div class="project-links">
+            <a href="https://github.com/sooyongjie/INTI-Academic-Support-Service">
+              <i class="fas fa-code-branch"></i>
+            </a>
+            <a href="./inti.html">
+              <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="image-polaroid" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                class="svg-inline--fa fa-image-polaroid fa-w-14 fa-3x">
+                <path fill="currentColor"
+                  d="M416 32H32A32 32 0 0 0 0 64v384a32 32 0 0 0 32 32h384a32 32 0 0 0 32-32V64a32 32 0 0 0-32-32zm-16 400H48v-64h352zm0-112h-16l-97.07-121c-7.46-9.31-22.4-9.31-29.86 0l-63.38 79-33.05-45.78c-7.92-11-25.36-11-33.28 0L64 320H48V80h352zM144 176a32 32 0 1 0-32-32 32 32 0 0 0 32 32z"
+                  class=""></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <p class="project-description">
+          A final year project developing an online platform that automates and tracks student application for
+          request of copies of course structures.
+        </p>
+        <div class="project-tags">
+          <a href="" class="tag">PHP</a>
+          <a href="" class="tag">MySQL</a>
+          <a href="" class="tag">FontAwesome</a>
+          <a href="" class="tag">Firebase</a>
+          <a href="" class="tag">Quotable API</a>
+          <a href="" class="tag">BIC API</a>
+        </div>
+        <div class="image">
+          <a href="./inti.html" class="see-more">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/sooyongjie.appspot.com/o/portfolio%2Finti.png?alt=media&token=65fc4c43-d9b4-4021-8852-2e0ab2e84853"
+            loading="lazy">
+        </div>
+      </div>
+      <!--
+        Adtech 
+      -->
+      <div class="project adt">
+        <div class="project-timeline">
+          <p class="year">2020</p>
+        </div>
+        <div class="project-info">
+          <p class="project-type">Academic Project</p>
+        </div>
+        <div class="project-heading">
+          <p class="project-title">Adtech Customer Support</p>
+          <div class="project-links">
+            <a href="https://github.com/sooyongjie/adtech">
+              <i class="fas fa-code-branch"></i>
+            </a>
+            <a href="./adtech.html">
+              <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="image-polaroid" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                class="svg-inline--fa fa-image-polaroid fa-w-14 fa-3x">
+                <path fill="currentColor"
+                  d="M416 32H32A32 32 0 0 0 0 64v384a32 32 0 0 0 32 32h384a32 32 0 0 0 32-32V64a32 32 0 0 0-32-32zm-16 400H48v-64h352zm0-112h-16l-97.07-121c-7.46-9.31-22.4-9.31-29.86 0l-63.38 79-33.05-45.78c-7.92-11-25.36-11-33.28 0L64 320H48V80h352zM144 176a32 32 0 1 0-32-32 32 32 0 0 0 32 32z"
+                  class=""></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <p class="project-description">
+          A web app to handle customer's service request with status tracking, feedback monitoring, monthly reporting,
+          overtime bonus recording and more.
+        </p>
+        <div class="project-tags">
+          <a href="" class="tag">PHP</a>
+          <a href="" class="tag">MySQL</a>
+          <a href="" class="tag">FontAwesome</a>
+          <a href="" class="tag">Chart.js</a>
+        </div>
+        <div class="image">
+          <a href="./adtech.html" class="see-more">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/sooyongjie.appspot.com/o/portfolio%2Fadtech.png?alt=media&token=18678e70-e78f-4548-aa02-89ae0f60967e"
+            loading="lazy">
+        </div>
+      </div>
+      <!--
+        TBinfo
+       -->
+      <div class="project tbinfo">
+        <div class="project-info">
+          <p class="project-type">Academic Project</p>
+        </div>
+        <div class="project-heading">
+          <p class="project-title">TBInfo</p>
+          <div class="project-links">
+            <a href="https://github.com/sooyongjie/TBinfo">
+              <i class="fas fa-code-branch"></i>
+            </a>
+            <a href="https://tb-info.web.app/">
+              <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                <title>External Link</title>
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <p class="project-description">
+          A web application to pull Tuberculosis data from an API to present it in a meaningful way and provide a quick
+          health evaluation for users.
+        </p>
+        <div class="project-tags">
+          <a href="" class="tag">Firestore</a>
+          <a href="" class="tag">Firebase Auth</a>
+          <a href="" class="tag">FontAwesome</a>
+          <a href="" class="tag">Chart.js</a>
+        </div>
+        <div class="image">
+          <a href="https://tb-info.web.app/" class="see-more">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/sooyongjie.appspot.com/o/portfolio%2Ftbinfo.png?alt=media&token=a1593324-fa79-4ac2-88e2-527ee2a02561">
+        </div>
+      </div>
+      <!--
+        aDicitonary
+       -->
+      <div class="project adictionary">
+        <div class="project-timeline">
+          <p class="year">2019</p>
+        </div>
+        <div class="project-info">
+          <p class="project-type">Personal Project</p>
+        </div>
+        <div class="project-heading">
+          <p class="project-title">aDictionary</p>
+          <div class="project-links">
+            <a href="https://github.com/sooyongjie/aDictionary-V2">
+              <i class="fas fa-code-branch"></i>
+            </a>
+            <a href="https://a-dictionary.web.app/">
+              <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                <title>External Link</title>
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <p class="project-description">
+          A minimalist dictionary web app for English definitions, pronunciations, and sample sentences.
+        </p>
+        <div class="project-tags">
+          <a href="" class="tag">JavaScript</a>
+          <a href="" class="tag">Owlbot Dictionary API</a>
+        </div>
+        <div class="image">
+          <a href="https://a-dictionary.web.app/" class="see-more">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/sooyongjie.appspot.com/o/portfolio%2Fadictionary.png?alt=media&token=ded274c0-cda2-4741-b58e-658b62c20a6d">
+        </div>
+      </div>
+    </div>
+    <!-- Projects -->
+    <div class="section contact-me">
+      <div class="heading">
+        <p class="title">
+          <span id="about">04.</span>
+          Get In Touch
+        </p>
+        <hr>
+      </div>
+      <form action="https://send.pageclip.co/QUrZvpJ2s4291i1PXvlK5vvVLM9JzSHq" class="contact-form" method="post">
+        <div class="contact-person">
+          <div class="contact-name">
+            <label for="">Name</label>
+            <input type="name" name="name" placeholder="Your name" />
+          </div>
+          <div class="contact-email">
+            <label for="">E-mail</label>
+            <input type="email" name="email" placeholder="Your email address" />
+          </div>
+        </div>
+        <label for="">Your Message</label>
+        <textarea name="sooyongjie_message" class="contact-message" rows="8"
+          placeholder="Enter your message here"></textarea>
+        <button type="submit" class="form-btn">
+          <i class="fas fa-paper-plane"></i>
+          <span>Send</span>
+        </button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p>Made with 💖</p>
+  </footer>
+</body>
+<noscript>It's 2021, enable JavaScript. Don't do fishy stuff 🐟</noscript>
+<script src="./script.js"></script>
+
+</html>
