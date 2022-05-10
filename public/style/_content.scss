@@ -4,6 +4,11 @@
   align-items: center;
 }
 
+
+ul li {
+  list-style: none;
+}
+
 .container .section {
   padding: 60px 0;
   width: 800px;
@@ -27,12 +32,12 @@
       font-weight: 600;
       span {
         font-size: 20px;
-        color: $orange;
+        color: $main;
       }
     }
   }
   p.para {
-    line-height: 24px;
+    line-height: 28px;
   }
   ul {
     margin-top: 20px;
@@ -56,7 +61,7 @@
   height: calc(70vh - 80px) !important;
   p.i-am {
     margin-bottom: 16px;
-    color: $orange;
+    color: $main;
     font-size: 16px;
     font-weight: 600;
   }
@@ -66,7 +71,6 @@
     margin-bottom: 20px;
   }
   p.intro-text {
-    width: 80%;
     color: #444;
     line-height: 28px;
   }
@@ -85,8 +89,8 @@
       text-decoration: none;
       &,
       span {
-        font-size: 16px;
-        color: $orange;
+        font-size: 15px;
+        color: $main;
       }
     }
     span,
@@ -97,10 +101,10 @@
       column-gap: 8px;
     }
     a.resume-btn {
-      padding: 12px 16px;
+      padding: 10px 14px;
       column-gap: 12px;
       border-radius: 8px;
-      border: 1px solid $orange;
+      border: 1px solid $main;
       transition: 0.1s ease-in-out;
       &:hover,
       &:focus {
@@ -121,6 +125,9 @@
 .about-me {
   // height: calc(100vh - 50vh);
   opacity: 0;
+  img {
+    margin-bottom: 36px;
+  }
 }
 
 .project {
@@ -154,7 +161,7 @@
     }
     p.project-type {
       font-family: "Roboto Mono", monospace;
-      color: $orange;
+      color: $main;
     }
   }
   .project-heading {
@@ -310,7 +317,7 @@
     transition: 0.05s ease-out;
     &:focus {
       background: #fff3e0;
-      border-bottom: 2px solid $orange;
+      border-bottom: 2px solid $main;
     }
   }
   button {
@@ -327,11 +334,11 @@
     transition: 0.1s ease-in-out;
     &:hover,
     &:focus {
-      border: 1px solid $orange;
+      border: 1px solid $main;
     }
     i,
     span {
-      color: $orange;
+      color: $main;
     }
     span {
       font-size: 16px;

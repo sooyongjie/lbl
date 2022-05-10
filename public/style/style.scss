@@ -1,6 +1,6 @@
-$orange: #fca311;
-$lightorange: #fff3e0;
-$darkblue: #14213d;
+$main: #1E88E5;
+$lightmain: #fff3e0;
+$darkblue: #272d2d;
 $grey: #e5e5e5;
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Mono&display=swap");
@@ -20,7 +20,7 @@ html {
 }
 
 *::selection {
-  background: #e2920f;
+  background: #1976d2;
   color: #fff;
 }
 
@@ -41,7 +41,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  background-color: rgba(252, 163, 17, 0.8);
+  background-color: #1E88E5;
 }
 
 h1,
@@ -59,6 +59,7 @@ h1 {
 a {
   color: $darkblue;
   text-decoration: none;
+
   span {
     cursor: pointer;
   }
@@ -99,19 +100,23 @@ button.skip-btn {
   background: $darkblue;
   transition: 0.15s ease-out;
   opacity: 0;
+
   i {
     font-size: 13px;
     font-weight: 400;
     margin-top: 1px;
   }
+
   i,
   span {
     color: #eee;
   }
+
   span {
     font-family: "Roboto Mono", monospace;
     font-size: 13px;
   }
+
   &.show {
     bottom: 0px !important;
     opacity: 1 !important;
@@ -124,6 +129,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+
   p {
     color: $darkblue;
     font-size: 14px;

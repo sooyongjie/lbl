@@ -1,11 +1,10 @@
 $dt-white: #e4e0d8;
 $lighterblue: #2b3750;
-$lighterorange: #e2920f;
+$lightermain: #1976d2;
 
 .dark-theme {
   &:-webkit-scrollbar-thumb {
-    border-radius: 20px;
-    background-color: rgba(226, 146, 15, 0.9);
+    background-color: #1E88E5EE;
   }
   color: $dt-white;
   background: $darkblue;
@@ -17,7 +16,7 @@ $lighterorange: #e2920f;
       border-color: #cdc9c2;
     }
   }
-  p {
+  p, li a {
     color: $dt-white;
   }
   p.intro-text,
@@ -42,7 +41,7 @@ $lighterorange: #e2920f;
   }
   .project-timeline p.year {
     background: $lighterblue;
-    color: $orange;
+    color: $main;
   }
   .image {
     &:hover img {
@@ -75,7 +74,7 @@ $lighterorange: #e2920f;
     background: $lighterblue !important;
     border-color: #2b3750;
     &:hover, &:focus {
-      border-color: $lighterorange;
+      border-color: $lightermain;
     }
   }
 
@@ -83,7 +82,7 @@ $lighterorange: #e2920f;
   .intro a,
   .intro span,
   p.project-type {
-    color: #e2920f !important;
+    color: $main !important;
   }
 
   button.skip-btn {

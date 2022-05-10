@@ -1,5 +1,6 @@
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 const themeIcon = document.querySelector(".theme-icon");
+const navLogo = document.querySelector(".nav-logo");
 const themeBtn = document.querySelector(".theme-btn");
 
 const setDarkMode = () => {
@@ -26,14 +27,17 @@ const themeSet = () => {
 let currTheme = localStorage.getItem("theme");
 if (currTheme == 'dark') {
   themeIcon.src = "./img/moon.svg";
+  navLogo.src = "./img/lbl-dark.svg";
   setDarkMode()
 }
 else if (currTheme != "light") {
   themeIcon.src = "./img/sun.svg";
+  navLogo.src = "./img/lbl.svg";
   themeSet()
 }
 
 const sunrise = () => {
+  navLogo.src = "./img/lbl.svg";
   gsap.to(themeIcon, {
     y: 10,
     opacity: 0,
@@ -50,6 +54,7 @@ const sunrise = () => {
 }
 
 const sunset = () => {
+  navLogo.src = "./img/lbl-dark.svg";
   gsap.to(themeIcon, {
     y: 10,
     opacity: 0,

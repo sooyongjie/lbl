@@ -4,13 +4,21 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: $darkblue;
+
   .nav-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  color: $darkblue;
+  ul {
+    width: 100%;
+    display: flex;
+    column-gap: 10rem;
+    align-items: center;
+    justify-content: center;
+  }
   img {
     width: 35px !important;
     height: 35px;
@@ -20,7 +28,7 @@ nav {
 .nav-icons {
   display: grid;
   align-items: center;
-  grid-template-columns: min-content min-content 1fr 1fr 1fr;
+  grid-template-columns: auto;
   column-gap: 20px;
   hr {
     border: none;
@@ -41,7 +49,7 @@ nav {
     transition: 0.1s ease-in-out;
     color: $darkblue;
     &:hover {
-      color: $orange;
+      color: $main;
     }
     &:hover {
       animation: boing 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;

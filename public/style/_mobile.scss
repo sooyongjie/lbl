@@ -58,6 +58,9 @@
 @media only screen and (max-width: 414px) {
   nav {
     padding: unset !important;
+    ul {
+      flex-direction: column;
+    }
   }
   .nav-container {
     width: 320px !important;

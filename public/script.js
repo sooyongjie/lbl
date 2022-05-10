@@ -33,22 +33,6 @@ let arr = [
   document.querySelector(".programming-skills"),
 ];
 
-// gsap ain't too good for scroll animations as it turns out
-
-const loadRatings = () => {
-  gsap.to(arr, {
-    stagger: 0.5,
-    opacity: 1,
-    delay: 0.1,
-    duration: 0.3,
-  });
-  setTimeout(() => {
-    for (i = 0; i < skills.length; i++) {
-      skills[i].style.width = `${skillRatings[i]}%`;
-    }
-  }, 200);
-};
-
 // set value where the animation should play
 setTriggerValue();
 
@@ -68,7 +52,7 @@ gsap.to(".about-me", {
   opacity: 1,
 });
 
-const sections = [".projects", ".contact-me", ".skills"];
+const sections = [".projects", ".contact-me"];
 
 sections.forEach((section) => {
   gsap.to(section, {
@@ -81,19 +65,6 @@ sections.forEach((section) => {
     opacity: 1,
     delay: 0.2,
   });
-});
-
-gsap.to(".ratings", {
-  scrollTrigger: {
-    start: `top ${triggerVal}`,
-    trigger: ".ratings",
-    onToggle: () => {
-      loadRatings();
-    },
-  },
-  y: 0,
-  duration: 0.5,
-  opacity: 1,
 });
 
 const projects = [".inti", ".adt", ".tbinfo", ".adictionary"];
