@@ -1,0 +1,148 @@
+@media (min-device-aspect-ratio: 21/9) {
+  nav {
+    padding: 0 10%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .section {
+    width: 600px !important;
+  }
+  .image,
+  .image img {
+    width: 100% !important;
+    height: 339.5px !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  nav {
+    padding: 0 20px !important;
+  }
+  .section {
+    width: 320px !important;
+  }
+  .image,
+  .image img {
+    width: 100% !important;
+    height: 182px !important;
+  }
+  .section {
+    padding: 50px 0 150px 0 !important;
+  }
+  p.name {
+    font-size: 50px !important;
+  }
+  .skills {
+    width: calc(100% - 20px);
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: unset;
+    row-gap: 80px;
+  }
+  .contact-person {
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 12px;
+    grid-template-columns: unset !important;
+    // row-gap: 50px;
+  }
+  .contact-me {
+    margin-bottom: 50px !important;
+  }
+  // a.see-more,
+  // .see-more i {
+  //   font-size: 15px !important;
+  //   opacity: 1 !important;
+  // }
+}
+
+@media only screen and (max-width: 414px) {
+  nav {
+    padding: unset !important;
+  }
+  .nav-container {
+    width: 320px !important;
+  }
+  p,
+  li {
+    font-size: 15px !important;
+  }
+  .intro a {
+    span,
+    i {
+      font-size: 15px !important;
+    }
+  }
+  .section {
+    padding: 80px 0 0px 0 !important;
+  }
+  .projects {
+    margin-bottom: -60px !important;
+  }
+  .heading {
+    span {
+      font-size: 18px !important;
+    }
+    p {
+      font-size: 22px !important;
+    }
+  }
+  p.name {
+    font-size: 48px !important;
+  }
+  p.year {
+    font-size: 13px !important;
+  }
+  p.project-title {
+    font-size: 22px !important;
+    line-height: 28px;
+  }
+  .project-links a {
+    i {
+      font-size: 18px !important;
+    }
+    svg {
+      height: 20px !important;
+    }
+  }
+  .project-tags a {
+    font-size: 13px !important;
+  }
+  .skills .skill-name {
+    font-size: 13px !important;
+  }
+  label {
+    font-size: 14px !important;
+  }
+  input,
+  textarea {
+    font-size: 14px !important;
+  }
+  button.form-btn i {
+    font-size: unset !important;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  nav {
+    padding: unset !important;
+  }
+  .nav-container,
+  .section {
+    width: 260px !important;
+  }
+  .heading {
+    margin-bottom: 50px !important;
+  }
+  p.name {
+    font-size: 40px !important;
+  }
+  .image,
+  .image img {
+    width: 100% !important;
+    height: 148.25px !important;
+  }
+  .contact-me {
+    padding-bottom: 60px !important;
+    margin-bottom: 0 !important;
+  }
+}

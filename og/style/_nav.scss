@@ -1,0 +1,57 @@
+nav {
+  height: 80px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  color: $darkblue;
+  img {
+    width: 35px !important;
+    height: 35px;
+  }
+}
+
+.nav-icons {
+  display: grid;
+  align-items: center;
+  grid-template-columns: min-content min-content 1fr 1fr 1fr;
+  column-gap: 20px;
+  hr {
+    border: none;
+    border-right: 1px solid $darkblue;
+    height: 18px;
+  }
+  button {
+    width: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img.theme-icon {
+      height: 19px;
+    }
+  }
+  i {
+    font-size: 20px;
+    transition: 0.1s ease-in-out;
+    color: $darkblue;
+    &:hover {
+      color: $orange;
+    }
+    &:hover {
+      animation: boing 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+    &:not(:hover) {
+      animation: boop 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+    &:focus {
+      background: #fa34a1;
+      animation: button-click 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+  }
+}
