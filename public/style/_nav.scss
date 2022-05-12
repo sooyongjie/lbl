@@ -5,6 +5,7 @@ nav {
   align-items: center;
   justify-content: center;
   color: $darkblue;
+  z-index: 10;
 
   .nav-container {
     width: 100%;
@@ -12,6 +13,7 @@ nav {
     justify-content: space-between;
     align-items: center;
   }
+
   ul {
     width: 100%;
     display: flex;
@@ -19,9 +21,52 @@ nav {
     align-items: center;
     justify-content: center;
   }
+
+  .menu {
+    // margin-right: 28px;
+    display: none;
+    font-size: 24px;
+
+  }
+
   img {
     width: 35px !important;
     height: 35px;
+  }
+
+  @media (max-width: 768px) {
+    position: relative;
+    .menu {
+      display: block;
+    }
+
+    .nav-links {
+      width: 100%;
+      padding: 24px 0;
+      top: 60px;
+      left: 0px;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+      border-bottom: 1px solid #eaeaea;
+      border-top: 1px solid #eaeaea;
+      background: #272d2d;
+      opacity: 0;
+      transition: 0.2s ease-in-out;
+      z-index: -1;
+
+      li {
+        font-weight: 500;
+        a {
+          color: #fff;
+        }
+      }
+      &.active {
+        top: 80px;
+        opacity: 1;
+      }
+    }
   }
 }
 
@@ -30,33 +75,41 @@ nav {
   align-items: center;
   grid-template-columns: auto;
   column-gap: 20px;
+
   hr {
     border: none;
     border-right: 1px solid $darkblue;
     height: 18px;
   }
+
   button {
     width: 19px;
     display: flex;
     align-items: center;
     justify-content: center;
+
     img.theme-icon {
       height: 19px;
     }
   }
+
   i {
     font-size: 20px;
     transition: 0.1s ease-in-out;
     color: $darkblue;
+
     &:hover {
       color: $main;
     }
+
     &:hover {
       animation: boing 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     }
+
     &:not(:hover) {
       animation: boop 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     }
+
     &:focus {
       background: #fa34a1;
       animation: button-click 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;

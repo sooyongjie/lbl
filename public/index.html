@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soo Yong Jie</title>
-  <link rel="shortcut icon" href="./img/smile-holo.svg" type="image/x-icon">
+  <title>Lai Bo Lin's Portfolio</title>
+  <link rel="shortcut icon" href="./img/lbl.svg" type="image/x-icon">
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -35,18 +35,18 @@
 <body>
   <nav>
     <div class="nav-container">
+      <button class="menu-btn">
+        <i class="fas fa-bars menu"></i>
+      </button>
       <a href="./">
         <img class="nav-logo" src="./img/lbl.svg" alt="">
       </a>
-      <ul>
+      <ul class="nav-links">
         <li>
           <a href="./hobby.html">Hobby</a>
         </li>
         <li>
-          <a href="./career.html">Career</a>
-        </li>
-        <li>
-          <a href="./experiences.html">Experiences</a>
+          <a href="./career.html">Experiences</a>
         </li>
         <li>
           <a href="./cv.html">CV</a>
@@ -72,12 +72,25 @@
         around at my website. This is the place where you will find details on my background experience, skills and past
         experience. To learn more about me, feel free to contact me.
       </p>
-      <div class="buttons">
-        <a href="https://firebasestorage.googleapis.com/v0/b/sooyongjie.appspot.com/o/Resume.pdf?alt=media&token=78f966f1-d45a-4e62-b9b6-90926429e277"
-          class="resume-btn">
-          <i class="far fa-file-pdf"></i>
-          <span>Resume</span>
-        </a>
+      <div class="social-links">
+        <div class="info">
+          <i class="fas fa-briefcase"></i>
+          <p>Marketing Associate Position</p>
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:+60102252638">010-2252638</a>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:bolinlai97@gmail.com">bolinlai97@gmail.com</a>
+        </div>
+        <div class="social">
+          <i class="fab fa-facebook-square"></i>
+          <a href="">bolin.lai.77</a>
+          <i class="fab fa-instagram"></i>
+          <a href="">bolinlai_</a>
+          <i class="fab fa-linkedin"></i>
+          <a href="">laibolin</a>
+        </div>
+      </div>
+      <div class="buttons" style="align-self: center;">
         <button class="about-me-btn">
           <span>About me</span>
           <i class="far fa-hand-point-down"></i>
@@ -165,16 +178,22 @@
     </div>
   </div>
   <footer>
-    <p>Made with 💖</p>
+    <p>© 2022 Lai Bo Lin</p>
   </footer>
 </body>
 <noscript>It's 2021, enable JavaScript. Don't do fishy stuff 🐟</noscript>
 <!-- <script src="./script.js"></script> -->
 <script>
+  const menuBtn = document.querySelector(".menu-btn");
+  const navLinks = document.querySelector(".nav-links");
   const aboutMeBtn = document.querySelector(".about-me-btn");
   const skills = document.querySelectorAll(".accent");
   const formBtn = document.querySelector(".form-btn");
   const formBtnIcon = document.querySelector(".fa-paper-plane");
+
+  menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active')
+  })
 
   aboutMeBtn.addEventListener("click", () => {
     document.querySelector(".about-me").scrollIntoView({
