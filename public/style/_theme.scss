@@ -12,12 +12,15 @@ $lightermain: #1976d2;
     .nav-icons a i {
       color: #e4e0d8;
     }
+    .menu {
+      color: $dt-white;
+    }
     hr {
       border-color: #cdc9c2;
     }
   }
-  p, li a {
-    color: $dt-white;
+  p, li, a {
+    color: $dt-white !important;
   }
   p.intro-text,
   p.para {

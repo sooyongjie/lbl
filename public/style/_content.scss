@@ -93,6 +93,10 @@ ul li {
   height: calc(80vh - 80px) !important;
   padding-bottom: 0px !important;
 
+  &.cv {
+    height: calc(50vh - 80px) !important;
+  }
+
   p.i-am {
     margin-bottom: 16px;
     color: $main;
@@ -171,6 +175,41 @@ ul li {
 
   img {
     margin-bottom: 36px;
+  }
+
+  .icon-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: flex-start;
+    column-gap: 18px;
+    row-gap: 36px;
+
+    .col {
+      width: 240px;
+      display: grid;
+      grid-template-columns: min-content auto;
+      column-gap: 8px;
+      row-gap: 8px;
+
+      i {
+        margin-top: 2px;
+      }
+    }
+
+    .row {
+      width: 240px;
+      display: grid;
+
+      ul {
+        margin-top: 8px;
+      }
+    }
+
+    .address {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
@@ -276,11 +315,16 @@ ul li {
       }
     }
   }
+
+  ul {
+    margin-bottom: 96px;
+  }
 }
 
 .projects {
   padding-bottom: 0px !important;
 }
+
 
 .pointless {
   padding-bottom: 0px !important;
@@ -345,7 +389,7 @@ ul li {
 }
 
 .contact-me {
-  margin-bottom: 10%;
+  // margin-bottom: 10%;
 }
 
 .contact-form {
@@ -417,12 +461,12 @@ ul li {
     }
 
     span {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 500;
     }
 
     i.fa-paper-plane {
-      font-size: 14px;
+      font-size: 13px;
       transition: 0.3s ease-in-out;
 
       &.fly {
@@ -437,4 +481,11 @@ ul li {
       animation: rotate 0.8s linear infinite both;
     }
   }
+}
+
+/*
+ * CV Education
+*/
+.education .project-description {
+  margin-bottom: 96px !important; 
 }
