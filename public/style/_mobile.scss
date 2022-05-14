@@ -25,6 +25,18 @@
     width: 320px !important;
   }
 
+  .intro {
+    margin-top: 0;
+    flex-direction: column !important;
+
+    img {
+      width: 80% !important;
+      margin-bottom: 60px;
+      justify-self: center;
+      align-self: center !important;
+    }
+  }
+
   .image,
   .image img {
     width: 100% !important;
@@ -38,7 +50,7 @@
   .social-links {
     column-gap: 8px;
   }
-  
+
   .icon-columns {
     grid-template-columns: 1fr !important;
   }

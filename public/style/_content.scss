@@ -90,11 +90,26 @@ ul li {
 }
 
 .intro {
-  height: calc(80vh - 80px) !important;
+  flex-direction: row !important;
+  align-items: center;
+  column-gap: 96px;
+  // height: calc(80vh - 80px) !important;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   padding-bottom: 0px !important;
 
-  &.cv {
-    height: calc(50vh - 80px) !important;
+  .col {
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+      align-self: flex-start;
+    }
+
+    img {
+      align-self: flex-start;
+      width: 180px;
+    }
   }
 
   p.i-am {
@@ -487,5 +502,5 @@ ul li {
  * CV Education
 */
 .education .project-description {
-  margin-bottom: 96px !important; 
+  margin-bottom: 96px !important;
 }

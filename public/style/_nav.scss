@@ -34,7 +34,7 @@ nav {
     height: 35px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 768px) { 
     position: relative;
     .menu {
       display: block;
@@ -42,23 +42,24 @@ nav {
 
     .nav-links {
       width: 100%;
-      padding: 24px 0;
-      top: 60px;
+      padding: 48px 0;
+      top: 56px;
       left: 0px;
       position: absolute;
       display: flex;
       flex-direction: column;
-      row-gap: 8px;
+      row-gap: 24px;
       border-bottom: 1px solid #eaeaea;
       border-top: 1px solid #eaeaea;
       background: #272d2d;
       opacity: 0;
-      transition: 0.2s ease-in-out;
+      transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       z-index: -1;
 
       li {
         font-weight: 500;
         a {
+          font-size: 18px;
           color: #fff;
         }
       }

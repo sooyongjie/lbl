@@ -6,77 +6,107 @@ $lightermain: #1976d2;
   &:-webkit-scrollbar-thumb {
     background-color: #1E88E5EE;
   }
+
   color: $dt-white;
   background: $darkblue;
+
   nav {
     .nav-icons a i {
       color: #e4e0d8;
     }
+
     .menu {
       color: $dt-white;
     }
+
+    .nav-links {
+      @media (max-width: 768px) {
+        background: #111;
+      }
+      border-color: #000;
+    }
+
     hr {
       border-color: #cdc9c2;
     }
   }
-  p, li, a {
+
+  p,
+  li,
+  a {
     color: $dt-white !important;
   }
+
   p.intro-text,
   p.para {
     color: $dt-white;
   }
+
   li,
   span.skill-name {
     color: $dt-white !important;
   }
+
   .heading hr {
     border-color: #434d63 !important;
   }
+
   .project-links a {
+
     i,
     svg {
       color: #b1aba1 !important;
     }
   }
+
   .project-description {
     background: $lighterblue !important;
   }
+
   .project-timeline p.year {
     background: $lighterblue;
     color: $main;
   }
+
   .image {
     &:hover img {
       opacity: 0.85;
     }
+
     img {
       border-color: $lighterblue;
       opacity: 0.9;
       filter: grayscale(20%);
     }
   }
+
   a.tag {
     color: #b1aba1 !important;
     // color: #98938a !important;
     border-color: $darkblue !important;
+
     &:hover {
       border-color: #b1aba1 !important;
     }
   }
+
   label {
     color: #e4dccf;
   }
+
   input,
   textarea {
     color: $dt-white;
     background: $lighterblue !important;
     border-color: $darkblue;
   }
+
   button.form-btn {
     background: $lighterblue !important;
     border-color: #2b3750;
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
       border-color: $lightermain;
     }
   }
@@ -91,6 +121,7 @@ $lightermain: #1976d2;
     background: $lighterblue;
     border: 1px solid $darkblue;
   }
+
   footer {
     border-top: 1px solid #434d63 !important;
   }
@@ -101,86 +132,107 @@ $lightermain: #1976d2;
     color: #fbc642;
     background: #7d6016;
   }
+
   .fa-heart {
     color: #e74c49;
     background: #721c1a;
   }
+
   .fa-search {
     color: #4dabf5;
     background: #104b79;
   }
+
   .fa-bullseye-arrow {
     color: #77a84b;
     background: #344f1c;
   }
+
   .creativity {
     hr.accent {
       border-color: #fbc642 !important;
     }
+
     hr.background {
       border-color: #7d6016 !important;
     }
   }
+
   .passion {
     hr.accent {
       border-color: #e74c49 !important;
     }
+
     hr.background {
       border-color: #721c1a !important;
     }
   }
+
   .focus {
     hr.accent {
       border-color: #4dabf5 !important;
     }
+
     hr.background {
       border-color: #104b79 !important;
     }
   }
+
   .accuracy {
     hr.accent {
       border-color: #77a84b !important;
     }
+
     hr.background {
       border-color: #344f1c !important;
     }
   }
+
   .programming-skills {
     .css {
       hr.accent {
         border-color: #425fd1 !important;
       }
+
       hr.background {
         border-color: #1b2e7a !important;
       }
     }
+
     .github {
       img {
         height: 26px !important;
         filter: invert(100%);
       }
+
       hr.accent {
         border-color: #ccc !important;
       }
+
       hr.background {
         border-color: #555 !important;
       }
     }
+
     .react {
       hr.accent {
         border-color: #71ddfc !important;
       }
+
       hr.background {
         border-color: #275764 !important;
       }
     }
+
     .javascript {
       img {
         height: 26px !important;
       }
+
       hr.accent {
         border-color: #f6d02f !important;
       }
+
       hr.background {
         border-color: #7a650c !important;
       }
